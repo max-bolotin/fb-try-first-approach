@@ -11,16 +11,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/demo")
 public class DemoController {
-    @Value("${pageId}")
+    @Value("${key.pageId}")
     private String pageId;
-    @Value("${userId}")
+    @Value("${key.userId}")
     private String userId;
     private final FacebookConnectionService facebookConnectionService;
 
     public DemoController(FacebookConnectionService facebookConnectionService) {
         this.facebookConnectionService = facebookConnectionService;
     }
-
 
     @GetMapping("/facebook")
     public String getInfoFromFacebookApi(){

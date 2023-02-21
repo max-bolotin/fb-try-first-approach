@@ -1,5 +1,15 @@
+server:
+  port: 9090
+
+spring:
+  h2:
+    console:
+      enabled: true
+
 key:
-  page-token: EAAMpZC1KS2Q8BALZCP2ziHYW0mDZBkMpqCCe5NuNVjEauPw5zHZCA486Pfx9gjpnZBwVVZBMsJFTbwvRZC62qT0ACZBdxwxrSF5qcKF1zWHLHpAFLhabGRwBdMYEWoIw68cRZAflFp9p4ylsCzE4hskDTWQFZCYOipVZB9wZAZCo70pEaiJZCyonJHEwYvh8Y6c4TuVXn0EecmUz1DXahSqHI0zSnx
-  userToken: EAAMpZC1KS2Q8BAJ3Oy64PAlSW3n1ai6QknmcP360HQdABCRCul0MiAjvqEUfvyS4ZAbfOt6ZA65ILPKKlN7FwDq3Ao4gdJTBeh7tClYRRBtEfJu8NXqTnBWdeMvGTJZA4ZBVHaN58XzsldHDOep17cDRXanfutvVwyxtHjhM33VE2qTI3EqYmZCUjFbDWaQLYQKJHhlluKHBFL7b9t65nP
+  pageToken: PAGE_TOKEN
+  userToken: USER_TOKEN
   pageId: 100089951486236_pfbid04i2Uj51mVpDmpBnKTaMNHdXwrEheTmAbyf8buUN123jVDhB7UskwJ6rM7uon6iEQl
   userId: 100090289271363
+  apiUri: https://graph.facebook.com/
+  queryString: ?method=GET&access_token=

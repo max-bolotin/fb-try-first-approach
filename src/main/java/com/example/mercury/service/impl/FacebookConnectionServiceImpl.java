@@ -9,13 +9,14 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class FacebookConnectionServiceImpl implements FacebookConnectionService {
-  @Value("${pageToken}")
+  // different tokens for page and user not needed in this case, only user token works just fine
+  @Value("${key.pageToken}")
   private String pageToken;
-  @Value("${userToken}")
+  @Value("${key.userToken}")
   private String userToken;
-  @Value("${apiUri}")
+  @Value("${key.apiUri}")
   private String apiUri;
-  @Value("${queryString}")
+  @Value("${key.queryString}")
   private String queryString;
   private final HttpClient httpClient;
 
